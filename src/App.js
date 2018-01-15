@@ -11,29 +11,30 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Postinvoice</h1>
+
+          <div className="nav-container">
+
+            <div className="nav-tab">
+              <p>Tab 1</p>
+            </div>
+
+            <div className="nav-tab">
+              <p>Tab 2</p>
+            </div>
+
+            <div className="nav-tab">
+              <p>Tab 3</p>
+            </div>
+
+            <div className="nav-tab">
+              <p>Tab 4</p>
+            </div>
+
+          </div>
+
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button className='testButton' type='button' onClick={() => alert('clicked')}>
-          index
-        </button>
-        <br></br>
-        <button className='testButton' type='button' onClick={() => alert('clicked')}>
-          show
-        </button>
-        <br></br>
-        <button className='testButton' type='button' onClick={() => alert('clicked')}>
-          create
-        </button>
-        <br></br>
-        <button className='testButton' type='button' onClick={() => alert('clicked')}>
-          delete
-        </button>
-        <br></br>
-        <button className='testButton' type='button' onClick={() => alert('clicked')}>
-          test
-        </button>
+
+
       </div>
     );
   }
