@@ -7,48 +7,12 @@
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-  overflow: hidden;
-}
-
 .App-title {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-.nav-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.nav-tab {
-  background-color: #333;
-  position: relative;
-  bottom: 15px;
-  padding: 0px 50px;
-  border-radius: 5px;
-}
-
-.nav-tab:hover {
-  background-color: #444;
-}
-
-.testButton {
-  background-color: #272;
-  margin: 15px;
-  border-width: 0px;
-  border-radius: 2px;
-  padding: 10px;
-  color: #fff;
-  font-size: 1.5em;
+.custom-nav {
+  font-size: 1.5rem;
 }
 
 @keyframes App-logo-spin {
