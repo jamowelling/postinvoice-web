@@ -215,6 +215,7 @@ export function fetchInvoices() {
     })
       .then(response => response.json())
       .then((responseJSON) => {
+        console.log('responseJSON', responseJSON);
         if (responseJSON.errorMessage) {
           alert(responseJSON.errorMessage);
         } else {
