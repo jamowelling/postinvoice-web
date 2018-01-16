@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import {
   BrowserRouter as Router,
   Route,
@@ -33,6 +32,4 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => ({ ...state });
-
-export default connect(mapStateToProps)(App);
+export default App;
