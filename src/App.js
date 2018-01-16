@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Nav, NavItem, PageHeader } from 'react-bootstrap';
+import { connect } from 'react-redux';
 
 import './App.css';
 
@@ -24,7 +25,7 @@ class App extends Component {
               bsClass="nav nav-tabs nav-justified custom-nav"
               justified
               activeKey={1}
-              onSelect={key => console.log('key: ', key)}
+              onSelect={() => console.log('prpos: ', this.props)}
             >
               <NavItem eventKey={1} href="/home">
                 Invoices
@@ -48,4 +49,6 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => ({ ...state });
+
+export default connect(mapStateToProps)(App);
