@@ -1,30 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
 import { Nav, NavItem, PageHeader } from 'react-bootstrap';
 
-const DB_URL='https://postinvoice-api.herokuapp.com';
+import './App.css';
+
+const DB_URL = 'https://postinvoice-api.herokuapp.com';
 
 class App extends Component {
+  someFunction = () => {
+    const something = 'something';
+    return something;
+  }
+
   render() {
     return (
       <div className="App">
-
-        <PageHeader bsClass='page-header'>
-
+        <PageHeader bsClass="page-header">
           <div>
-            <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">Postinvoice</h1>
           </div>
-
           <div>
             <Nav
               bsStyle="tabs"
-              bsClass=" nav nav-tabs nav-justified custom-nav"
+              bsClass="nav nav-tabs nav-justified custom-nav"
               justified
               activeKey={1}
-              onSelect={() => alert('hit')}
+              onSelect={key => console.log('key: ', key)}
             >
               <NavItem eventKey={1} href="/home">
                 Invoices
@@ -40,8 +40,9 @@ class App extends Component {
               </NavItem>
             </Nav>
           </div>
-
         </PageHeader>
+
+
       </div>
     );
   }
