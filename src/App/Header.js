@@ -13,20 +13,20 @@ const Header = () => (
     <Navbar>
       <Navbar.Header>
         <Navbar.Brand>
-          <a id="home-link" href="#home">Postinvoice</a>
+          <a id="home-link" href="/invoices">Postinvoice</a>
         </Navbar.Brand>
       </Navbar.Header>
       <Nav bsClass="nav navbar-nav custom-nav">
-        <NavItem eventKey={1} href="#">
+        <NavItem eventKey={1} href="/invoices">
           Invoices
         </NavItem>
-        <NavItem eventKey={2} href="#">
+        <NavItem eventKey={2} href="/inventory_sheets">
           Inventory Sheets
         </NavItem>
-        <NavItem eventKey={3} href="#">
+        <NavItem eventKey={3} href="/reports">
           Reports
         </NavItem>
-        <NavItem eventKey={4} href="#">
+        <NavItem eventKey={4} href="/declining">
           Declining Budget
         </NavItem>
       </Nav>
