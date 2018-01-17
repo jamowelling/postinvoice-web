@@ -29,7 +29,6 @@ module.exports = {
     ],
   },
 
-
   devServer: {
     contentBase: './public',
     colors: true,
